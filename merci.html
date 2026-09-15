@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Merci pour votre demande | Kévin Bastien</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{--navy:#061b33;--navy2:#0b3158;--ink:#162330;--muted:#637381;--line:#dce7ee}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:linear-gradient(145deg,#edf6fb,#fff);color:var(--ink)}
+.wrap{min-height:100vh;display:grid;place-items:center;padding:32px}
+.card{width:min(680px,94vw);background:#fff;border:1px solid var(--line);border-radius:26px;box-shadow:0 24px 65px rgba(6,27,51,.13);padding:38px;text-align:center}
+.badge{width:66px;height:66px;border-radius:50%;display:grid;place-items:center;margin:0 auto 18px;background:#eaf7ef;color:#287a4c;font-size:34px;font-weight:900}
+h1{margin:0 0 12px;color:var(--navy);font-size:clamp(34px,6vw,52px);letter-spacing:-1.5px}
+p{color:var(--muted);font-size:17px;line-height:1.6;margin:0 auto 24px;max-width:560px}
+.contact{background:#f5f9fc;border:1px solid #deebf2;border-radius:16px;padding:18px;margin:22px 0;color:var(--navy)}
+.contact strong{display:block;font-size:20px;margin-bottom:7px}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 17px;border-radius:11px;font-weight:850;text-decoration:none}
+.primary{background:var(--navy2);color:#fff}
+.soft{background:#eef6fb;color:var(--navy2);border:1px solid #d5e5ee}
+.small{margin-top:22px;font-size:12px;color:#82919c}
+</style>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+(function(){
+  const hasRealSubmission = sessionStorage.getItem('kb_lead_submitted') === '1';
+  const accepted = localStorage.getItem('kb_cookie_choice') === 'accept';
+
+  if (!hasRealSubmission || !accepted) return;
+
+  const s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-18166655153';
+
+  s.onload = function() {
+    gtag('js', new Date());
+    gtag('config', 'AW-18166655153');
+
+    setTimeout(function() {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18166655153/U8lNCLrQ3fqcELHRxNZD',
+        'value': 1.0,
+        'currency': 'EUR',
+        'event_callback': function() {
+          document.documentElement.setAttribute('data-google-ads-conversion', 'sent');
+        }
+      });
+      sessionStorage.removeItem('kb_lead_submitted');
+    }, 500);
+  };
+
+  document.head.appendChild(s);
+})();
+</script>
+</head>
+<body>
+<div class="wrap">
+  <main class="card">
+    <div class="badge">✓</div>
+    <h1>Merci pour votre demande.</h1>
+    <p>Votre demande d’estimation a bien été transmise. Je vais prendre connaissance des informations concernant votre bien et vous recontacter au sujet de votre avis de valeur.</p>
+    <div class="contact">
+      <strong>Kévin Bastien</strong>
+      Mandataire immobilier<br>
+      06 52 18 42 33 • kevin.bastien@iadfrance.fr
+    </div>
+    <div class="actions">
+      <a class="btn primary" href="index.html">Retour à l’accueil</a>
+      <a class="btn soft" href="biens.html">Voir mes biens à vendre</a>
+    </div>
+    <div class="small">Un avis juste. Une stratégie claire. Un projet réussi.</div>
+  </main>
+</div>
+</body>
+</html>
