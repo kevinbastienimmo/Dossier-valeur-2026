@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Merci pour votre demande | Kévin Bastien</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{--navy:#061b33;--navy2:#0b3158;--ink:#162330;--muted:#637381;--line:#dce7ee}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:linear-gradient(145deg,#edf6fb,#fff);color:var(--ink)}
+.wrap{min-height:100vh;display:grid;place-items:center;padding:32px}
+.card{width:min(680px,94vw);background:#fff;border:1px solid var(--line);border-radius:26px;box-shadow:0 24px 65px rgba(6,27,51,.13);padding:38px;text-align:center}
+.badge{width:66px;height:66px;border-radius:50%;display:grid;place-items:center;margin:0 auto 18px;background:#eaf7ef;color:#287a4c;font-size:34px;font-weight:900}
+h1{margin:0 0 12px;color:var(--navy);font-size:clamp(34px,6vw,52px);letter-spacing:-1.5px}
+p{color:var(--muted);font-size:17px;line-height:1.6;margin:0 auto 24px;max-width:560px}
+.contact{background:#f5f9fc;border:1px solid #deebf2;border-radius:16px;padding:18px;margin:22px 0;color:var(--navy)}
+.contact strong{display:block;font-size:20px;margin-bottom:7px}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 17px;border-radius:11px;font-weight:850;text-decoration:none}
+.primary{background:var(--navy2);color:#fff}
+.soft{background:#eef6fb;color:var(--navy2);border:1px solid #d5e5ee}
+.small{margin-top:22px;font-size:12px;color:#82919c}
+</style>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+(function(){
+  const hasRealSubmission = sessionStorage.getItem('kb_lead_submitted') === '1';
+  const accepted = localStorage.getItem('kb_cookie_choice') === 'accept';
+
+  if (!hasRealSubmission || !accepted) return;
+
+  const s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-18166655153';
+
+  s.onload = function() {
+    gtag('js', new Date());
+    gtag('config', 'AW-18166655153');
+
+    // La conversion est détectée automatiquement dans Google Ads
+    // grâce à la règle d'URL contenant "merci.html".
+    sessionStorage.removeItem('kb_lead_submitted');
+  };
+
+  document.head.appendChild(s);
+})();
+</script>
+
+<style>
+/* Harmonisation V6 — beige / chocolat premium, typographie arrondie */
+:root{
+  --navy:#332923!important;--navy2:#44362e!important;--blue:#59483d!important;
+  --gold:#b48768!important;--ink:#292622!important;--muted:#786f67!important;
+  --line:#ddd1c4!important;--soft:#f1e9de!important;--white:#fffdf9!important;
+  --bg:#f7f2ea!important;--text:#292622!important;
+  --shadow:0 18px 50px rgba(69,58,44,.08)!important;
+}
+html{background:#332923}
+body,input,select,textarea,button{
+  font-family:"Avenir Next","Nunito Sans","Trebuchet MS",Arial,sans-serif!important;
+}
+body{
+  color:#292622!important;
+  background:linear-gradient(145deg,#f7f2ea,#fffdf9)!important;
+}
+.topline{background:#332923!important;color:#e7ddd2!important;letter-spacing:.7px}
+.header,header{background:rgba(250,247,241,.96)!important;border-color:#ddd1c4!important}
+.brand,.brand strong{color:#332923!important}
+.brand small{color:#786f67!important}
+.kb,.brand-mark{
+  background:#59483d!important;color:#fffaf4!important;box-shadow:none!important;border-radius:9px!important;
+}
+.phone,.btn-main,.primary,.btn,.filter.active{
+  background:#59483d!important;color:#fffaf4!important;border-color:#59483d!important;
+}
+.hero{
+  background:linear-gradient(135deg,#f4eee5 0%,#e9ddcf 100%)!important;
+  color:#292622!important;
+}
+.hero h1,h1,h2,.content h2,.sellbox h2{
+  font-family:"Avenir Next Rounded","Avenir Next","Trebuchet MS",Arial,sans-serif!important;
+  color:#292622!important;font-weight:600!important;
+}
+.hero p,.subtitle,p{color:#786f67}
+.eyebrow{
+  background:transparent!important;color:#8d684f!important;border-color:#cdb9aa!important;border-radius:9px!important;
+}
+.card,.contact,.sellbox,.empty,.error{
+  background:#fffdf9!important;border-color:#ddd1c4!important;box-shadow:0 18px 50px rgba(69,58,44,.08)!important;
+}
+.card,.sellbox{border-radius:12px!important}
+.block{border-color:#e6ddd3!important}
+.block h2{color:#332923!important}
+.block p,.block li{color:#675f57!important}
+.btn,.btn-soft,.soft,.sellbtn,.phone{border-radius:12px!important}
+.btn-soft,.soft{
+  background:#f1e9de!important;color:#59483d!important;border-color:#d8cabc!important;
+}
+.footer,footer{background:#332923!important;color:#d0c5ba!important}
+.footer strong,footer strong{color:#fffaf4!important}
+.main,.controls{background:#f7f2ea!important;border-color:#ddd1c4!important}
+.filter{
+  background:#fffdf9!important;color:#59483d!important;border-color:#d7c9bc!important;
+}
+.filter.active{color:#fffaf4!important}
+.media{background:linear-gradient(135deg,#e8ddd1,#f4eee7)!important}
+.badge{background:#59483d!important;color:#fffaf4!important}
+.loc{color:#8d684f!important}
+.price{color:#8d684f!important}
+.sell{background:#fffdf9!important}
+.sellbox{background:linear-gradient(120deg,#f1e9de,#fffaf9)!important}
+.sellbtn{background:#59483d!important;color:#fffaf4!important}
+.notice{background:#f5ecdf!important;border-color:#dbc3aa!important;color:#6e513e!important}
+.contact{color:#332923!important}
+.badge:not(.property-mini-badge){color:#59483d}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <main class="card">
+    <div class="badge">✓</div>
+    <h1>Merci pour votre demande.</h1>
+    <p>Votre demande d’estimation a bien été transmise. Je vais prendre connaissance des informations concernant votre bien et vous recontacter au sujet de votre avis de valeur.</p>
+    <div class="contact">
+      <strong>Kévin Bastien</strong>
+      Mandataire immobilier<br>
+      06 52 18 42 33 • kevin.bastien@iadfrance.fr
+    </div>
+    <div class="actions">
+      <a class="btn primary" href="index.html">Retour à l’accueil</a>
+      <a class="btn soft" href="biens.html">Voir mes biens à vendre</a>
+    </div>
+    <div class="small">Un avis juste. Une stratégie claire. Un projet réussi.</div>
+  </main>
+</div>
+</body>
+</html>
